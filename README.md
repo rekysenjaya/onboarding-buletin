@@ -1,6 +1,3 @@
-Oke! Kita bisa buat versi **README profesional, rapi, dan jelas**, cocok untuk proyek “Onboarding Buletin Novel”, dengan struktur modern, diagram flow, dan contoh setup. Berikut versi siap pakai:
-
-````markdown
 # Onboarding Buletin Novel
 
 Proyek ini adalah template **React + Vite** untuk membuat **flow onboarding interaktif** bagi pengguna Buletin Novel.  
@@ -100,12 +97,3 @@ npm run build
 ## Lisensi
 
 MIT
-
-```
-
-Ini versi **rapi, profesional, dan mudah dipahami**.  
-
-Kalau mau, saya juga bisa bikin versi **README interaktif dengan contoh kode setiap screen + contoh penggunaan hook `useOnboardingData`**, supaya langsung bisa dicontoh developer lain.  
-
-Apakah mau saya buatkan versi itu juga?
-```

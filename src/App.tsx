@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import OnboardingNameScreen from "./pages/OnboardingNameScreen";
+import OnboardingGenderScreen from "./pages/OnboardingGenderScreen";
+import OnboardingDateOfBirthScreen from "./pages/OnboardingDateOfBirthScreen";
 
 import ProgressBar from "./components/ProgressBar";
 
@@ -14,6 +16,8 @@ import backgroundJourney from "./assets/background-journey.png";
 
 const screenMap: Record<Screen, any> = {
   OnboardingNameScreen: OnboardingNameScreen,
+  OnboardingGenderScreen: OnboardingGenderScreen,
+  OnboardingDateOfBirthScreen: OnboardingDateOfBirthScreen,
 };
 
 const OnboardingNavigator = () => {
@@ -29,7 +33,7 @@ const OnboardingNavigator = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div
-        className="bg-[#6C4E9A] min-h-screen max-w-[500px] p-4 bg-no-repeat bg-contain relative"
+        className="bg-[#6C4E9A] min-h-screen max-w-full sm:max-w-[500px] w-full p-4 bg-no-repeat bg-contain relative"
         style={{ backgroundImage: `url(${backgroundJourney})` }}
       >
         {on && <ProgressBar data={data} />}
