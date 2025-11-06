@@ -55,7 +55,7 @@ const OnboardingCategoryScreen: React.FC<ScreenComponentProps> = ({
         transition={{ duration: 0.6, type: "spring" }}
         className="text-white text-2xl font-bold mb-4"
       >
-        Saya suka novel dengan kategori?
+        Kamu menulis cerita dengan kategori apa?
       </motion.h1>
 
       <motion.p
@@ -64,7 +64,7 @@ const OnboardingCategoryScreen: React.FC<ScreenComponentProps> = ({
         transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
         className="text-white text-xs mb-4"
       >
-        MinDi akan rekomendasikan novel dengan genre favorit kamu
+        MinDi akan bantu kamu menemukan pembaca yang tepat untuk karyamu!
       </motion.p>
 
       <motion.div

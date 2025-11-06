@@ -57,7 +57,7 @@ const OnboardingWhereInfoScreen: React.FC<ScreenComponentProps> = ({ onNext, onP
         transition={{ duration: 1, type: "spring" }}
         className="text-white text-2xl font-bold mb-4"
       >
-        Darimana kamu tahu tentang GoodBuletin?
+        Dari mana kamu mengetahui platform penulis GoodBuletin?
       </motion.h1>
 
       <motion.div

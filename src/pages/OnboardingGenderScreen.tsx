@@ -45,7 +45,7 @@ const OnboardingGenderScreen: React.FC<ScreenComponentProps> = ({ onNext, onPrev
         transition={{ duration: 1 }}
         className="text-white text-2xl font-bold mb-4"
       >
-        Saya adalah seorang?
+        Kamu adalah?
       </motion.h1>
 
       <div className="flex flex-col gap-4">

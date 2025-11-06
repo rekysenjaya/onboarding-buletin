@@ -53,7 +53,7 @@ const OnboardingDateOfBirthScreen: React.FC<ScreenComponentProps> = ({ onNext, o
         transition={{ duration: 0.5 }}
         className="text-white text-2xl font-bold mb-4"
       >
-        Saya lahir tanggal?
+        Kapan tanggal lahirmu?
       </motion.h1>
 
       <motion.p
@@ -62,7 +62,7 @@ const OnboardingDateOfBirthScreen: React.FC<ScreenComponentProps> = ({ onNext, o
         transition={{ delay: 0.1, duration: 0.5 }}
         className="text-white text-xs mb-4"
       >
-        Akan ada kejutan dari GoodBuletin di hari ulang tahun-mu!
+        GoodBuletin akan menyiapkan kejutan spesial untukmu di hari ulang tahunmu, termasuk tips menulis atau hadiah dari platform untuk penulis.
       </motion.p>
 
       <DateInput

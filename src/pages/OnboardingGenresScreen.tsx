@@ -54,7 +54,7 @@ const OnboardingGenresScreen: React.FC<ScreenComponentProps> = ({
         transition={{ duration: 0.6, type: "spring" }}
         className="text-white text-2xl font-bold mb-4"
       >
-        Saya suka novel <br /> dengan topik?
+        Kamu suka nulis tentang apa?
       </motion.h1>
 
       <motion.p
@@ -63,7 +63,7 @@ const OnboardingGenresScreen: React.FC<ScreenComponentProps> = ({
         transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
         className="text-white text-sm mb-4"
       >
-        MinDi akan rekomendasikan novel dengan genre favorit kamu
+        MinDi bakal bantu kenalin karya kamu ke pembaca yang suka topik itu juga!
       </motion.p>
 
       <motion.div

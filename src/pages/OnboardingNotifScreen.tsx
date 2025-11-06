@@ -43,7 +43,7 @@ const OnboardingNotifScreen: React.FC<ScreenComponentProps> = ({ onNext, onPrev 
         className="text-white text-2xl font-bold mb-4"
       >
         Jangan sampai <br />
-        ketinggalan update novel kesayangan kamu di GoodBuletin nantinya!
+        ketinggalan informasi terbaru dari GoodBuletin!
       </motion.h1>
 
       <motion.p
@@ -52,7 +52,7 @@ const OnboardingNotifScreen: React.FC<ScreenComponentProps> = ({ onNext, onPrev 
         transition={{ duration: 1, delay: 0.2, type: "spring" }}
         className="text-white text-sm font-normal mb-4"
       >
-        Kamu patut jadi yang pertama tahu update terbaru novel dan berita terupdate GoodBuletin.
+        Dapatkan notifikasi tentang fitur penulis, promo menarik, serta event khusus untuk kreator.
       </motion.p>
 
       <motion.div
@@ -65,7 +65,7 @@ const OnboardingNotifScreen: React.FC<ScreenComponentProps> = ({ onNext, onPrev 
         <div>
           <p className="text-white font-bold text-sm m-0">Notifikasi</p>
           <p className="text-white text-xs m-0">
-            GoodBuletin akan mengirimkan notifikasi penting seputar update novel, promo dan event.
+            GoodBuletin akan mengirimkan pemberitahuan penting seputar karya kamu, event menulis, dan kesempatan kolaborasi.
           </p>
         </div>
       </motion.div>
@@ -88,10 +88,10 @@ const OnboardingNotifScreen: React.FC<ScreenComponentProps> = ({ onNext, onPrev 
           className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white rounded-lg w-72 p-6 text-center">
             <p className="font-bold text-sm text-gray-800 mb-2">
-              “GoodBuletin” ingin mengirimkan kamu notifikasi
+              “GoodBuletin” ingin mengirimkan notifikasi kepada kamu.
             </p>
             <p className="text-xs text-black mb-4">
-              GoodBuletin akan mengirimkan notifikasi penting seputar update novel, promo dan event.
+              GoodBuletin akan mengirimkan pemberitahuan penting seputar karya kamu, event menulis, dan kesempatan kolaborasi.
             </p>
             <div className="flex justify-between gap-2">
               <button
