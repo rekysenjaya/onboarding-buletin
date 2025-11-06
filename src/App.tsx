@@ -3,6 +3,10 @@ import React, { useEffect, useState } from "react";
 import OnboardingNameScreen from "./pages/OnboardingNameScreen";
 import OnboardingGenderScreen from "./pages/OnboardingGenderScreen";
 import OnboardingDateOfBirthScreen from "./pages/OnboardingDateOfBirthScreen";
+import OnboardingCategoryScreen from "./pages/OnboardingCategoryScreen";
+import OnboardingGenresScreen from "./pages/OnboardingGenresScreen";
+import OnboardingNotifScreen from "./pages/OnboardingNotifScreen";
+import OnboardingWhereInfoScreen from "./pages/OnboardingWhereInfoScreen";
 
 import ProgressBar from "./components/ProgressBar";
 
@@ -18,6 +22,10 @@ const screenMap: Record<Screen, any> = {
   OnboardingNameScreen: OnboardingNameScreen,
   OnboardingGenderScreen: OnboardingGenderScreen,
   OnboardingDateOfBirthScreen: OnboardingDateOfBirthScreen,
+  OnboardingCategoryScreen: OnboardingCategoryScreen,
+  OnboardingGenresScreen: OnboardingGenresScreen,
+  OnboardingNotifScreen: OnboardingNotifScreen,
+  OnboardingWhereInfoScreen: OnboardingWhereInfoScreen,
 };
 
 const OnboardingNavigator = () => {
