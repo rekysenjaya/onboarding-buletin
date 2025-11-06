@@ -22,9 +22,9 @@ const ProgressBar = ({ data }) => {
 
   return (
     <div className="">
-      <div className="bg-white rounded-md mb-4" style={{ width: `calc(100vw - 2rem)` }}>
+      <div className="bg-white rounded-md mb-4" style={{ width: `calc(100vw - 2rem)`, maxWidth: `calc(500px - 2rem)` }}>
         <motion.div
-          className="bg-yellow-400 h-1 rounded-md"
+          className="bg-[#FCD942] h-1 rounded-md"
           animate={{ width: `${barWidth}%` }}
           transition={{ duration: 1 }}
         />
