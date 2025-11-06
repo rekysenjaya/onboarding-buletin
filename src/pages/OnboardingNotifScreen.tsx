@@ -81,7 +81,11 @@ const OnboardingNotifScreen: React.FC<ScreenComponentProps> = ({ onNext, onPrev 
 
       {/* Modal */}
       {modalVisible && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3, type: "spring" }}
+          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white rounded-lg w-72 p-6 text-center">
             <p className="font-bold text-sm text-gray-800 mb-2">
               “GoodBuletin” ingin mengirimkan kamu notifikasi
@@ -107,12 +111,12 @@ const OnboardingNotifScreen: React.FC<ScreenComponentProps> = ({ onNext, onPrev 
                   _goToSetting("https://example.com/settings-notifications");
                   updateOnboarding();
                 }}
-                >
-                  Izinkan
-                </button>
+              >
+                Izinkan
+              </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );

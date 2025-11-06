@@ -18,4 +18,5 @@ export interface ScreenComponentProps {
   onPrev: () => void;
   data: OnboardingData;
   setField: (key: string, value: any) => void;
+  resetOnboarding: () => void;
 }

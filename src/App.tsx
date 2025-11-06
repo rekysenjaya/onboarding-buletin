@@ -29,7 +29,7 @@ const screenMap: Record<Screen, any> = {
 };
 
 const OnboardingNavigator = () => {
-  const { currentScreen, goNext, goPrev, data, setField } = useOnboardingData();
+  const { currentScreen, goNext, goPrev, data, setField, resetOnboarding } = useOnboardingData();
   const [on, setOn] = useState(false);
 
   useEffect(() => {
@@ -51,6 +51,7 @@ const OnboardingNavigator = () => {
             onPrev={goPrev}
             data={data}
             setField={setField}
+            resetOnboarding={resetOnboarding}
           />
         ) : null}
       </div>

@@ -13,10 +13,11 @@ const listWhere = [
   { label: "Lainnya", value: "Lainnya" }
 ];
 
-const OnboardingWhereInfoScreen: React.FC<ScreenComponentProps> = ({ onNext, onPrev, data, setField }) => {
+const OnboardingWhereInfoScreen: React.FC<ScreenComponentProps> = ({ onNext, onPrev, data, setField, resetOnboarding }) => {
   const [adSource, setAdSource] = useState("");
   const [elseSource, setElseSource] = useState("");
   const [loading, setLoading] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
 
   useEffect(() => {
     if (data?.ad_source) {
@@ -71,9 +72,8 @@ const OnboardingWhereInfoScreen: React.FC<ScreenComponentProps> = ({ onNext, onP
               setAdSource(item.value);
               if (item.value !== "Lainnya") setElseSource("");
             }}
-            className={`bg-white rounded-md mt-4 p-2 flex items-center cursor-pointer ${
-              item.value === "Lainnya" && adSource === "Lainnya" ? "rounded-t-md" : ""
-            }`}
+            className={`bg-white rounded-md mt-4 p-2 flex items-center cursor-pointer ${item.value === "Lainnya" && adSource === "Lainnya" ? "rounded-t-md" : ""
+              }`}
           >
             <div className="w-4 h-4 rounded-full border-2 border-gray-800 flex items-center justify-center mr-2">
               {adSource === item.value && <div className="w-2.5 h-2.5 rounded-full bg-gray-800" />}
@@ -101,9 +101,45 @@ const OnboardingWhereInfoScreen: React.FC<ScreenComponentProps> = ({ onNext, onP
           actionPrev={onPrev}
           readyNext={(adSource !== "Lainnya" && !!adSource) || !!elseSource}
           loadingNext={loading}
-          actionNext={submit}
+          actionNext={() => setModalVisible(true)}
         />
       </div>
+      {modalVisible && (
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3, type: "spring" }}
+          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white rounded-lg w-72 p-6 text-center">
+            <p className="font-bold text-sm text-gray-800 mb-2">
+              Terima kasih! Data Anda sudah berhasil dikirim.
+            </p>
+            <p className="text-xs text-black mb-4">
+              Apakah Anda ingin daftar baru?
+            </p>
+            <div className="flex justify-between gap-2">
+              <button
+                style={{ flex: 1 }}
+                title="Batal"
+                onClick={() => {
+                  setModalVisible(false);
+                }}
+              >
+                Tidak
+              </button>
+              <button
+                style={{ flex: 1 }}
+                onClick={() => {
+                  setModalVisible(false);
+                  resetOnboarding()
+                }}
+              >
+                Ya
+              </button>
+            </div>
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 };
