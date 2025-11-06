@@ -5,6 +5,14 @@ Onboarding menyimpan progress di **localStorage**, divalidasi input, dan menggun
 
 ---
 
+## 🚀 Deploy
+
+Project ini sudah **dideploy di Vercel** dan bisa diakses di sini:
+
+👉 **[https://onboarding-goodbuletin.vercel.app/](https://onboarding-goodbuletin.vercel.app/)**
+
+---
+
 ## Flow Onboarding
 
 ```mermaid
@@ -41,6 +49,8 @@ flowchart TD
 * **Framer Motion** (opsional untuk animasi step)
 * **Moment.js** (validasi tanggal)
 * **TypeScript** (disarankan)
+* **TailwindCSS** (opsional)
+* **Vercel** (deployment)
 * **ESLint**
 
 ---
